@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "google-ads",
+  "version": "2.1.0",
+  "description": "Free Google Ads account management by TrueClicks. Download account structure and performance data, run custom GAQL queries, and validate and execute changes in the live account.",
+  "author": {
+    "name": "TrueClicks",
+    "url": "https://www.trueclicks.com"
+  },
+  "homepage": "https://claudeppc.ai",
+  "repository": "https://github.com/TrueClicks/openai-plugins",
+  "license": "MIT",
+  "keywords": ["google-ads", "ppc", "paid-search", "gaql", "advertising"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Google Ads",
+        "shortDescription": "Google Ads data and changes",
+        "longDescription": "Download a Google Ads account (structure plus 30-day, 7-day, or monthly performance) into a local folder as markdown, run custom GAQL queries, and push changes from pending_changes.json after a dry-run validation. Requires a free config.json from claudeppc.ai.",
+        "developerName": "TrueClicks",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://claudeppc.ai",
+        "defaultPrompt": [
+          "Download my Google Ads account structure and the last 30 days of performance.",
+          "Find keywords that spent money in the last 30 days without converting.",
+          "Validate my pending changes before I apply them."
+        ],
+        "brandColor": "#3A00FF",
+        "brandColorDark": "#00CDFA",
+        "composerIcon": "./assets/icon.png",
+        "composerIconDark": "./assets/icon-dark.png",
+        "logo": "./assets/icon.png",
+        "logoDark": "./assets/icon-dark.png"
+      }
+    }
+  }
+}
