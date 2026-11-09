@@ -1,0 +1,21 @@
+{
+  "name": "google-ads",
+  "version": "2.1.0",
+  "description": "Free Google Ads account management by TrueClicks. Download account structure and performance data, run custom GAQL queries, and validate and execute changes in the live account.",
+  "author": {
+    "name": "TrueClicks",
+    "url": "https://www.trueclicks.com"
+  },
+  "homepage": "https://claudeppc.ai",
+  "repository": "https://github.com/TrueClicks/openai-plugins",
+  "license": "MIT",
+  "keywords": ["google-ads", "ppc", "paid-search", "gaql", "advertising"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Google Ads",
+    "shortDescription": "Google Ads data and changes",
+    "longDescription": "Download a Google Ads account (structure plus 30-day, 7-day, or monthly performance) into a local folder as markdown, run custom GAQL queries, and push changes from pending_changes.json after a dry-run validation. Requires a free config.json from claudeppc.ai.",
+    "developerName": "TrueClicks",
+    "capabilities": []
+  }
+}

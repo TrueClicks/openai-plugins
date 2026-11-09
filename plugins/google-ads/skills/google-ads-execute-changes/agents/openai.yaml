@@ -1,0 +1,6 @@
+interface:
+  display_name: "Google Ads: execute changes"
+  short_description: "Apply pending changes to the live account"
+
+policy:
+  allow_implicit_invocation: false

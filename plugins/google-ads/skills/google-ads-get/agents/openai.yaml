@@ -1,0 +1,6 @@
+interface:
+  display_name: "Google Ads: download data"
+  short_description: "Download account structure and performance"
+
+policy:
+  allow_implicit_invocation: false

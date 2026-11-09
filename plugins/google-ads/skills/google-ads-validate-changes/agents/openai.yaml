@@ -1,0 +1,6 @@
+interface:
+  display_name: "Google Ads: validate changes"
+  short_description: "Dry-run pending_changes.json"
+
+policy:
+  allow_implicit_invocation: false

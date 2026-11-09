@@ -1,0 +1,20 @@
+{
+  "name": "trueclicks",
+  "interface": {
+    "displayName": "TrueClicks"
+  },
+  "plugins": [
+    {
+      "name": "google-ads",
+      "source": {
+        "source": "local",
+        "path": "./plugins/google-ads"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

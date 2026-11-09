@@ -1,0 +1,16 @@
+# Generated data
+data/
+change-history/
+pending_changes.json
+tmp/
+
+# Credentials
+config.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
