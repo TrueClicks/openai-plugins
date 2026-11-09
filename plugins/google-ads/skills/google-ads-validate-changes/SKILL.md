@@ -33,5 +33,5 @@ mkdir -p tmp && curl -s --max-time 230 -D tmp/response_headers.txt -X POST "http
 3. Read `tmp/response_headers.txt`. If there is a line starting with `X-Plugin-Update:`, show its value to the user as a notice. Then delete `tmp/response_headers.txt`.
 
 4. After the API responds:
-   - If validation succeeded: confirm the changes are ready, and tell the user they can apply them with `$google-ads-execute-changes` (in ChatGPT: `@google-ads-execute-changes`).
+   - If validation succeeded: confirm the changes are ready, and tell the user they can apply them with the `google-ads-execute-changes` skill.
    - If validation failed: show the errors, explain what went wrong, and suggest fixes to `pending_changes.json`. The format is specified in `docs/PENDING_CHANGES.md`.

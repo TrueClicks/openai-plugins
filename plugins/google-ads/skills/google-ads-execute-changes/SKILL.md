@@ -44,7 +44,7 @@ bash:
 mkdir -p tmp && curl -s --max-time 230 -D tmp/response_headers.txt -X POST "https://api.claudeppc.ai/api/cli/google-ads/execute-changes?pluginVersion=2.1.0&host=openai" -F "config=@config.json" -F "pendingChanges=@pending_changes.json"
 ```
 
-   Run this command **once**. If it times out or the connection drops, don't retry automatically: the changes may already be applied. Tell the user and recommend running `$google-ads-get` (in ChatGPT: `@google-ads-get`) to check the account state first.
+   Run this command **once**. If it times out or the connection drops, don't retry automatically: the changes may already be applied. Tell the user and recommend running the `google-ads-get` skill to check the account state first.
 
 4. Read `tmp/response_headers.txt`. If there is a line starting with `X-Plugin-Update:`, show its value to the user as a notice. Then delete `tmp/response_headers.txt`.
 
@@ -54,6 +54,6 @@ mkdir -p tmp && curl -s --max-time 230 -D tmp/response_headers.txt -X POST "http
    - Delete `pending_changes.json`.
 
 6. After the API responds:
-   - If everything succeeded: summarize what was applied, give the change history file path, and recommend running `$google-ads-get` (in ChatGPT: `@google-ads-get`) to refresh the local data.
+   - If everything succeeded: summarize what was applied, give the change history file path, and recommend running the `google-ads-get` skill to refresh the local data.
    - If it partially failed: explain which operations succeeded and which failed, and suggest next steps.
    - If it completely failed: show the errors and suggest fixes.
